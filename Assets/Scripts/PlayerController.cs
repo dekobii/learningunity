@@ -30,13 +30,13 @@ public class PlayerController : MonoBehaviour {
         var z = Input.GetAxis("Vertical") * Time.deltaTime * 3.0f;
         if (transform.position.x < -4 && x < 0)
             x = 0;
-        if (transform.position.x > 4 && x > 0)
+        if (transform.position.x > 33 && x > 0)
             x = 0;
         if (transform.position.z < -4 && z < 0)
             z = 0;
         if (transform.position.z > 4 && z > 0)
             z = 0;
-        transform.Translate(x, 0, z);
+        transform.Translate(new Vector3(x, 0, z), Space.World);
         //rb.velocity += new Vector3(xSpeed, 0, zSpeed);
 
         m_Animator = gameObject.GetComponent<Animator>();
