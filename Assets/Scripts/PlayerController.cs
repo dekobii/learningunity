@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour {
         m_Animator.speed = 0.01f;
 
         // Test
+        // Another test for git
     }
 
     private void FixedUpdate()
