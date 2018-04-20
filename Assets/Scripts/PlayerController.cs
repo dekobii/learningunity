@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour {
         var z = Input.GetAxis("Vertical") * Time.deltaTime * 3.0f;
         if (transform.position.x < -4 && x < 0)
             x = 0;
-        if (transform.position.x > 33 && x > 0)
+        if (transform.position.x > 34 && x > 0)
             x = 0;
         if (transform.position.z < -4 && z < 0)
             z = 0;
